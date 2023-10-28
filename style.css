@@ -14,7 +14,9 @@ html {
     padding: 19px 20px;
 }
 
-p {}
+p {
+    text-align: center;
+}
 
 /*#region Navigation Bar */
 .top-nav-container {
@@ -22,7 +24,7 @@ p {}
     height: 56px;
     padding: 20px 0px 20px 5px;
     border-bottom: 1px solid #ddd;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -45,6 +47,7 @@ p {}
 .top-nav-container .links a:hover {
     display: flex;
     background-color: #bbb;
+    color: #3d7ab3;
     justify-content: space-between;
 }
 /*#endregion Navigation Bar */
@@ -53,6 +56,7 @@ p {}
 .main-container {
     display: flex;
     justify-content: center;
+    margin: 10px;
 }
 
 .recipe-card {
@@ -86,3 +90,28 @@ p {}
     justify-content: space-between;
 }
 /*#endregion Main Container */
+
+/*#region Bottom Bar*/
+.bot-nav-container {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #ddd;
+    padding: 10px 400px;
+    flex-wrap: wrap;
+}
+
+.bot-nav-container ul {
+    list-style: none;
+    text-align: center;
+    line-height: 22px;
+}
+
+.bot-nav-container a {
+    text-decoration: none;
+}
+
+.bot-nav-container a:hover{
+    color: #3d7ab3;
+}
+
+/*#endregion Bottom Bar*/
